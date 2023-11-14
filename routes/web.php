@@ -24,7 +24,7 @@ Route::get('r2', function () {
 });
 Route::get('hello/{name?}', function ($name = 'Everybody') {
     return 'hello ,' . $name;
-});
+})->name('hello.index'); //補上hello.index
 Route::get('dashboard', function () {
     return 'dashboard';
 });
