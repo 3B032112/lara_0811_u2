@@ -22,6 +22,6 @@ Route::get('r1', function () {
 Route::get('r2', function () {
     return view('Welcome');
 });
-Route::get('hello/{name}', function ($name) {
+Route::get('hello/{name?}', function ($name = 'Everybody') {
     return 'hello ,' . $name;
 });
